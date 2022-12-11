@@ -1,0 +1,3 @@
+cache=/Users/kaechle/.cache/
+store-dir = "/Users/kaechle/.local/state"
+userconfig = "/Users/kaechle/.config/npm/config"
