@@ -32,6 +32,7 @@ cask "transmission"
 cask "setapp"
 cask "appcleaner"
 cask "diffusionbee"
+cask "rectangle"
 
 # app store
 
