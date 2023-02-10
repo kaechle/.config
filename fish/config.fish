@@ -6,6 +6,10 @@ end
 
 fish_add_path /opt/homebrew/sbin
 
+# python
+
+fish_add_path /Users/kaechle/Library/Python/3.10/bin
+
 # xnxm
 
 set PATH /Users/kaechle/.local/share/nvm/v19.2.0/bin $PATH

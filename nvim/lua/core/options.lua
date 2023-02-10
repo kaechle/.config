@@ -3,6 +3,7 @@
 local g = vim.g
 local opt = vim.opt
 
+opt.guifont = { "MonoLisa", "h14" }
 opt.mouse = 'a'
 opt.clipboard = 'unnamedplus'
 opt.swapfile = false

@@ -26,15 +26,9 @@ require('nightfox').setup({
     },
     modules = {},
   },
-  palettes = {
-    dayfox = {}
-  },
-  specs = {
-    dayfox = {}
-  },
-  groups = {
-    dayfox = {}
-  },
+  palettes = {},
+  specs = {},
+  groups = {},
 })
 
 vim.cmd("colorscheme dawnfox")
