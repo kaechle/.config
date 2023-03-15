@@ -6,11 +6,18 @@ end
 
 fish_add_path /opt/homebrew/sbin
 
+# rust
+
+set -gx CARGO_HOME "/Users/kaechle/.local/share/cargo"
+set -gx RUSTUP_HOME "/Users/kaechle/.local/share/rustup"
+set -gx PATH "$CARGO_HOME/bin" $PATH
+set -gx PATH "$RUSTUP_HOME" $PATH
+
 # python
 
 fish_add_path /Users/kaechle/Library/Python/3.10/bin
 
-# xnxm
+# npm and pnpm
 
 set PATH /Users/kaechle/.local/share/nvm/v19.2.0/bin $PATH
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
@@ -29,7 +36,9 @@ end
 
 # aliaseseses
 
-alias dots='/opt/homebrew/bin/git'
+alias dots='cd ~/.config/'
+alias dev='cd ~/Developer'
+alias gofish='source /Users/kaechle/.config/fish/config.fish'
 
 # gofish
 

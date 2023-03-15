@@ -1,12 +1,18 @@
--- Import Lua modules
+for _, source in ipairs {
+  "astronvim.bootstrap",
+  "astronvim.options",
+  "astronvim.lazy",
+  "astronvim.autocmds",
+  "astronvim.mappings",
+} do
+  local status_ok, fault = pcall(require, source)
+  if not status_ok then vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault) end
+end
 
-require('packer_init')
-require('core/autocmds')
-require('core/colors')
-require('core/keymaps')
-require('core/options')
-require('core/neovide')
-require('lsp/lspconfig')
-require('plugins/indent-blankline')
-require('plugins/nvim-treesitter')
-require('plugins/neo-tree')
+if astronvim.default_colorscheme then
+  if not pcall(vim.cmd.colorscheme, astronvim.default_colorscheme) then
+    require("astronvim.utils").notify("Error setting up colorscheme: " .. astronvim.default_colorscheme, "error")
+  end
+end
+
+require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)

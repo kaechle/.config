@@ -7,14 +7,18 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "One Light",
-  "buffer_font_family": "MonoLisa",
-  "buffer_font_size": 13,
+  "theme": "Sandcastle",
+  "buffer_font_family": "MonoLisa-light",
+  "buffer_font_size": 14,
+  "enable_language_server": true,
   "tab_size": 2,
-  "vim_mode": true,
+  "vim_mode": false,
+  "soft_wrap": "preferred_line_length",
+  "preferred_line_length": 80,
   "terminal": {
-    "font_size": 14,
-    "font_family": "MonoLisa"
+    "font_size": 13,
+    "font_family": "MonoLisa-light",
+    "blinking": "on"
   },
   "experiments": {
     "experimental_themes": true
