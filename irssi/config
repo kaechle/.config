@@ -145,7 +145,6 @@ chatnets = {
     type = "IRC";
     sasl_mechanism = "PLAIN";
     sasl_username = "kaechle";
-    sasl_password = "bh77oKLmn1";
   };
 };
 
