@@ -27,19 +27,19 @@ export NPM_CONFIG_STATE_DIR=$XDG_STATE_HOME/npm
 export NPM_CONFIG_LOGS_DIR=$XDG_CACHE_HOME/npm/logs
 set -gx PNPM_HOME "/Users/kaechle/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
+# aliaseseses
+
+alias dots='cd ~/.config/'
+alias dev='cd ~/Developer'
+alias sites='cd ~/Sites'
+alias gofish='source /Users/kaechle/.config/fish/config.fish'
+
+# gofish
+
+starship init fish | source
 
 # iterm
 
 source ~/.config/fish/iterm2_shell_integration.fish
 function iterm2_print_user_vars
 end
-
-# aliaseseses
-
-alias dots='cd ~/.config/'
-alias dev='cd ~/Developer'
-alias gofish='source /Users/kaechle/.config/fish/config.fish'
-
-# gofish
-
-starship init fish | source
